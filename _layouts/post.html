@@ -1,6 +1,7 @@
 ---
 layout: default
 comments: true
+hasCode: true
 ---
 <div class="post">
 
@@ -29,5 +30,10 @@ comments: true
     <noscript>Please enable JavaScript to view the
       <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
     </noscript>
+  {% endif %}
+
+  <!-- Si el post tiene bloques de codigo incluye el script prism.js -->
+  {% if page.hasCode %}
+    <script src="{{ '/js/prism.js' | prepend: site.baseurl }}"></script>
   {% endif %}
 </div>
