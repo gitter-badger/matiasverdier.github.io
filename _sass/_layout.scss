@@ -2,12 +2,33 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 300px;
+    background-image: url("../images/background.png");
+    background-size: auto;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    h1 {
+      font-size: 4rem;
+      color: #e6dbda;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #e6dbda;
+    }
+
+    &.landing {
+      height: 100vh;
+    }
 }
 
 .site-title {
@@ -186,6 +207,15 @@
 .post-link {
     display: block;
     font-size: 24px;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
 }
 
 
