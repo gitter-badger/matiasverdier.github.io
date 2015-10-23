@@ -1,5 +1,5 @@
 # Site settings
-title: Matias Verdier | Blog
+title: Matias Verdier | Software Developer
 email: verdier.matias@gmail.com
 description: >
   Esta es mi pagina personal donde compartire cosas que me parezcan interesantes,
@@ -11,3 +11,11 @@ github_username:  MatiasVerdier
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Matias Verdier"
