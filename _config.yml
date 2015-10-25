@@ -8,6 +8,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://matiasverdier.github.io" # the base hostname & protocol for your site
 twitter_username: matiasvj
 github_username:  MatiasVerdier
+linkedin_url: https://uy.linkedin.com/in/matiasvj
+google_plus_url: https://www.google.com/+MatiasVerdierJaime
 
 # Build settings
 markdown: kramdown
