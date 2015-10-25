@@ -1,7 +1,7 @@
 <header class="site-header {% if page.url == '/index.html' %} landing {% endif %}">
 
   <div class="wrapper">
-    
+
     {% if page.url == '/index.html' %}
       <div class="header-picture">
         <img src="/images/perfil.png" alt="">
@@ -18,28 +18,28 @@
     {% if page.url == '/index.html' %}
       <div class="social-icons">
         {% if site.github_username %}
-          <a href="https://github.com/{{ site.github_username }}" class="icon-button github">
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" class="icon-button github">
             <i class="fa fa-github"></i>
             <span></span>
           </a>
         {% endif %}
 
         {% if site.twitter_username %}
-          <a href="https://twitter.com/{{ site.twitter_username }}" class="icon-button twitter">
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="icon-button twitter">
             <i class="fa fa-twitter"></i>
             <span></span>
           </a>
         {% endif %}
 
         {% if site.linkedin_url %}
-        <a href="{{site.linkedin_url}}" class="icon-button linkedin">
+        <a href="{{site.linkedin_url}}" target="_blank" class="icon-button linkedin">
           <i class="fa fa-linkedin"></i>
           <span></span>
         </a>
         {% endif %}
 
         {% if site.google_plus_url %}
-        <a href="{{site.google_plus_url}}" class="icon-button google-plus">
+        <a href="{{site.google_plus_url}}" target="_blank" class="icon-button google-plus">
           <i class="fa fa-google-plus"></i>
           <span></span>
         </a>
