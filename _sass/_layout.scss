@@ -31,6 +31,122 @@
     }
 }
 
+.header-picture {
+  width: 40%;
+  margin: 0 auto;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+/*
+ * Iconos redes sociales
+ */
+
+ $icon-size:          5.0rem;
+ $icon-font-size:     3.0rem;
+
+ .social-icons {
+   padding-top: 30px;
+ }
+
+.icon-button {
+  background-color: white;
+  border-radius: $icon-size;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $icon-font-size;
+  height: $icon-size;
+  line-height: $icon-size;
+  margin: 0 20px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: $icon-size;
+
+  span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+  }
+
+  &:hover span {
+    width: $icon-size;
+    height: $icon-size;
+    border-radius: $icon-size;
+    margin: - ($icon-size / 2);
+    background-color: white;
+  }
+}
+
+.github:hover span {
+  background-color: $github-color;
+}
+
+/* Circle */
+
+.twitter {
+  background-color: $twitter-color;
+}
+.linkedin {
+  background-color: $linkedin-color;
+}
+.google-plus {
+  background-color: $g-plus-color;
+}
+
+ /* Icons */
+
+.icon-button {
+  i {
+    background: none;
+    color: white;
+    height: $icon-size;
+    left: 0;
+    line-height: $icon-size;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: $icon-size;
+    z-index: 10;
+  }
+
+  .fa-github {
+    color: $github-color;
+  }
+
+  &:hover {
+    .fa-github {
+      color: white;
+    }
+    .fa-twitter {
+      color: $twitter-color;
+    }
+    .fa-linkedin {
+      color: $linkedin-color;
+    }
+    .fa-google-plus {
+      color: $g-plus-color;
+    }
+  }
+}
+
 .site-title {
     font-size: 26px;
     line-height: 56px;

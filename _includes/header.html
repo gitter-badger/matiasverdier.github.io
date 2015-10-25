@@ -1,11 +1,51 @@
 <header class="site-header {% if page.url == '/index.html' %} landing {% endif %}">
 
   <div class="wrapper">
+    
+    {% if page.url == '/index.html' %}
+      <div class="header-picture">
+        <img src="/images/perfil.png" alt="">
+      </div>
+    {% endif %}
 
-    <a href="/">
-      <h1>Matias Verdier</h1>
-      <h2>Software developer</h2>
-    </a>
+    <div class="header-title">
+      <a href="/">
+        <h1>Matias Verdier</h1>
+        <h2>Software developer</h2>
+      </a>
+    </div>
+
+    {% if page.url == '/index.html' %}
+      <div class="social-icons">
+        {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" class="icon-button github">
+            <i class="fa fa-github"></i>
+            <span></span>
+          </a>
+        {% endif %}
+
+        {% if site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}" class="icon-button twitter">
+            <i class="fa fa-twitter"></i>
+            <span></span>
+          </a>
+        {% endif %}
+
+        {% if site.linkedin_url %}
+        <a href="{{site.linkedin_url}}" class="icon-button linkedin">
+          <i class="fa fa-linkedin"></i>
+          <span></span>
+        </a>
+        {% endif %}
+
+        {% if site.google_plus_url %}
+        <a href="{{site.google_plus_url}}" class="icon-button google-plus">
+          <i class="fa fa-google-plus"></i>
+          <span></span>
+        </a>
+        {% endif %}
+      </div>
+    {% endif %}
 
     <!-- <nav class="site-nav">
       <a href="#" class="menu-icon">
