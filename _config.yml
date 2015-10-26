@@ -6,10 +6,15 @@ description: >
   mis proyectos y cualquier otra cosa que se me ocurra.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://matiasverdier.github.io" # the base hostname & protocol for your site
+
+# Redes sociales
 twitter_username: matiasvj
 github_username:  MatiasVerdier
 linkedin_url: https://uy.linkedin.com/in/matiasvj
 google_plus_url: https://www.google.com/+MatiasVerdierJaime
+
+# Discus
+disqus_shortname: matiasverdier
 
 # Build settings
 markdown: kramdown
