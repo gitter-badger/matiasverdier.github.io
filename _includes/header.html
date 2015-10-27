@@ -1,8 +1,8 @@
-<header class="site-header {% if page.url == '/index.html' %} landing {% endif %}">
+<header class="site-header {% if page.url == '/' %} landing {% endif %}">
 
   <div class="wrapper">
 
-    {% if page.url == '/index.html' %}
+    {% if page.url == '/' %}
       <div class="header-picture">
         <img src="/images/perfil.png" alt="">
       </div>
@@ -15,7 +15,7 @@
       </a>
     </div>
 
-    {% if page.url == '/index.html' %}
+    {% if page.url == '/' %}
       <div class="social-icons">
         {% if site.github_username %}
           <a href="https://github.com/{{ site.github_username }}" target="_blank" class="icon-button github">
